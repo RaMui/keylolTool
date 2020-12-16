@@ -1,6 +1,12 @@
+# about keylolTool
+
+这是一个[其乐社区](https://keylol.com/)的[油猴](https://greasyfork.org/)脚本，在保持论坛原版风格的基础上增加一些附加功能。
+
+## 功能&更新说明
+
 Version 1.0
 
-[其乐社区](https://keylol.com/)可以使用蒸汽兑换体力进行用户组升级，但是当进行大量蒸汽兑换的时候，系统会按阶梯收取部分手续费，例如：
+论坛可以使用蒸汽兑换体力进行用户组升级，但是当进行大量蒸汽兑换的时候，系统会按阶梯收取部分手续费，例如：
 
 |兑换体力数量|手续费|所需蒸汽数量|
 |:-:|:-:|:-:|
@@ -9,13 +15,7 @@ Version 1.0
 |7-9|2|9-11|
 |...|...|...|
 
-(2019.12.1当天兑换规则)
-
 一次性兑换的蒸汽数量越多，手续费就越高，小数额加上多次数兑换可以绕过这个规则，实现0手续费的兑换操作。
-
-___
-
-# 功能说明
 
 1. 在用户功能栏中添加一个"蒸汽兑换"选项，点击后直接跳转到兑换页面。
 >![before](https://raw.githubusercontent.com/RaMui/keylolTool/master/img/01.png) ➡ ![after](https://raw.githubusercontent.com/RaMui/keylolTool/master/img/02.png)
@@ -28,13 +28,17 @@ ___
 6. 每次兑换会有3-8秒的等待时间，不会频繁进行兑换请求，减轻服务器压力。
 7. 脚本需要[油猴](https://greasyfork.org/)插件运行，安装成功后添加新脚本即可开始使用。
 ___
-___
-
 Version 1.1
-# 功能说明
-
 1. 增加浏览历史功能,记录浏览过的帖子。
 >![history](https://raw.githubusercontent.com/RaMui/keylolTool/master/img/07.png)
 2. 使用indexedDB存储浏览过的帖子的基本信息(如标题、作者等)。
 3. 优化蒸汽兑换功能部分的代码，使用ES6风格重构。
-4. 因为增加了新功能，所以项目名称更换为keylolTool。
+4. 项目名称更换为keylolTool。
+
+---
+
+Version 1.2.1
+
+1.bug fix。
+
+2.为浏览历史添加分页功能。
